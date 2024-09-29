@@ -16,6 +16,11 @@ pipeline {
                 git 'https://github.com/NuuttiBoi/TempConverter.git'
             }
         }
+        stage('Check Dockerfile') {
+          steps {
+            sh 'ls -la'
+          }
+        }
         stage('Build Docker Image') {
             steps {
                 // Build Docker image
