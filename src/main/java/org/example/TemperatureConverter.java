@@ -1,4 +1,4 @@
-
+package org.example;
 
 public class TemperatureConverter {
 
@@ -37,6 +37,10 @@ public class TemperatureConverter {
     public static  double	kelvinToFah(double kel) {
         return Math.round((kel-273.15)* (9/5) + 32);
     }
-
+    public static void main(String[] args){
+        TemperatureConverter converter = new TemperatureConverter();
+        converter.celsiusToFahrenheit(12.1);
+    }
 }
+
 
