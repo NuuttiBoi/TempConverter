@@ -3,9 +3,9 @@ pipeline {
 
     environment {
         // Define Docker Hub credentials ID
-        DOCKERHUB_CREDENTIALS_ID = 'Nuuttiboi'
+        DOCKERHUB_CREDENTIALS_ID = 'hub-credentials'
         // Define Docker Hub repository name
-        DOCKERHUB_REPO = 'Nuuttiboi/TempConverter'
+        DOCKERHUB_REPO = 'nuuttiboi/tempconverter'
         // Define Docker image tag
         DOCKER_IMAGE_TAG = 'latest'
     }
