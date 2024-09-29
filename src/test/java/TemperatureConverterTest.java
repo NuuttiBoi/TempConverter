@@ -1,5 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
+
+import static junit.framework.Assert.assertEquals;
 import static org.junit.Assert.*;
 
 public class TemperatureConverterTest {
@@ -31,5 +33,9 @@ public class TemperatureConverterTest {
     public void testKelvinToCel() {
         assertEquals(0.0, TemperatureConverter.kelvinToCel(273.15F), 0.001);
     }
-
+    @Test
+    public void convertKeltoFarTest() {
+        double test =Math.round(converter.kelvinToFah(300.1));
+        assertEquals(59.0, test);
+    }
 }
